@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <div className='home'>
         <Navbar/>
+        <div className="hero">
         <img src={hero_banner} alt=""  className='banner_img'/>
         <div className="hero_caption">
           <img src={hero_title} alt=""  className='caption_img'/>
@@ -21,7 +22,14 @@ const Home = () => {
               <button className='btn dark_btn'><img src={info_icon} alt="" />More info</button>
             </div>
             <TitleCards/>
-        </div>
+           </div>
+       </div>
+       <div className="more_cards">
+        <TitleCards title={"Blockbuster Movie"}/>
+        <TitleCards title={"Only on Netflix"}/>
+        <TitleCards title={"Upcoming"}/>
+        <TitleCards title={"Top pic for you"}/>
+       </div>
     </div>
   )
 }
